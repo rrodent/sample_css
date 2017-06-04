@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This is the title of the post
-postHero: /images/hero.jpg
+postHero: {{ site.github.url }}/images/hero.jpg
 author: Krazy Kat
 authorTwitter: http://twitter.com/mhartl
 gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
