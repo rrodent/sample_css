@@ -36,6 +36,11 @@ h2 ~ p {
   max-width: 70%;
   text-align: center;
 }
+h4 {
+  color: #999;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 /* HEADER STYLES */
 .header {
@@ -149,7 +154,7 @@ h2 ~ p {
   width: 0;
 }*/
 .hero-home {
-  background-image: url(/images/shark.jpg);
+  background-image: url(/images/hero.jpg);
   background-position: center top;
 }
 .hero-content {
@@ -295,6 +300,16 @@ h2 ~ p {
 .col-three .col-aside {
   flex: 0 1 20em
 }
+.col-two {
+  display: flex;
+}
+.col-two .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+.col-two .col-content {
+  flex: 1;
+}
 
 /* GALLERY STYLES */
 .gallery-thumbs {
@@ -330,5 +345,23 @@ h2 ~ p {
   font-size: 0.8rem;
 }
 .gallery-info h3 {
+  margin-bottom: 1em;
+}
+
+/* PAGE STYLES */
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
+}
+.page h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page h2 {
+  margin-bottom: 0.5em;
+}
+.page h4 {
   margin-bottom: 1em;
 }
