@@ -142,17 +142,6 @@ h4 {
   position: absolute;
   transform: translate(-50%, 0);
 }
-/*.full-hero:after {
-  bottom: 2vh;
-  border: 10px solid;
-  border-color: #fff transparent transparent;
-  content: "";
-  height: 0;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%,0);
-  width: 0;
-}*/
 .hero-home {
   background-image: url(/images/hero.jpg);
   background-position: center top;
@@ -317,6 +306,8 @@ h4 {
   flex: 0 1 20em
 }
 .col-two {
+  /*comment this out to put Recent Posts list above post previews on Blog page*/
+  /*also comment out .blog-recent {display: none;} in media query*/
   display: flex;
 }
 .col-two .col-aside {
@@ -465,4 +456,69 @@ h4 {
 }
 .post-footer p {
   font-size: 0.8em;
+}
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+  /* HEADER STYLES */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+  /* HOME STYLES */
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+  /*GALLERY STYLES*/
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    /*hartl incorrectly puts 1 1 0 here*/
+    flex: 1 1 auto;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1 1 auto;
+  }
+  /* BLOG STYLES */
+  .blog-recent {
+    display: none;
+  }
+  .blog-previews {
+    padding: 0;
+  }
+
 }
